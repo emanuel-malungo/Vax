@@ -1,70 +1,43 @@
-# Learn more: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# Dependencies & Package Managers
+# dependencies
 node_modules/
-.pnpm-store/
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-lerna-debug.*
 
-# Expo & Metro
+# Expo
 .expo/
-.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
-.metro-health-check*
 
-# Environment & Secret files
-.env
-.env.local
-.env.development.local
-.env.production.local
-.env*.local
-sentry.properties
-!.env.example
-
-# Native Builds & Keystores
+# Native
 .kotlin/
-.gradle/
-build/
 *.orig.*
 *.jks
-*.keystore
 *.p8
 *.p12
 *.key
-*.pem
 *.mobileprovision
 
-# Generated Native Folders (prebuild)
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# generated native folders
 /ios
 /android
-
-# IDEs & Code Editors
-.idea/
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.swp
-*.swo
-
-# OS Specific
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# TypeScript & Testing
-*.tsbuildinfo
-coverage/
-.nyc_output/
-
-# Extra project exclusions
-example
